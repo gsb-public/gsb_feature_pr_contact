@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the GSB Feature PR Contact feature.
  */
+
+include_once 'gsb_feature_pr_contact.features.inc';

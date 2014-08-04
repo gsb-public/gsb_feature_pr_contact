@@ -20,13 +20,13 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 7,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -102,13 +102,15 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'email',
         'settings' => array(
           'conditions' => array(),
+          'text' => 'Email',
+          'title' => 'Email Contact Form',
         ),
-        'type' => 'email_default',
-        'weight' => 2,
+        'type' => 'email_contact',
+        'weight' => 5,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -146,13 +148,14 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
+        'module' => 'telephone',
         'settings' => array(
           'conditions' => array(),
+          'title' => '',
         ),
-        'type' => 'text_plain',
-        'weight' => 1,
+        'type' => 'telephone_link',
+        'weight' => 4,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -188,13 +191,13 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'ds_extras_field_template' => '',
