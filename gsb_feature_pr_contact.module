@@ -5,3 +5,12 @@
  */
 
 include_once 'gsb_feature_pr_contact.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function gsb_feature_pr_contact_form_taxonomy_form_term_alter(&$form, &$form_state) {
+  if ($form['#vocabulary']->machine_name == 'pr_contact') {
+    $form['description']['#access'] = FALSE;
+  }
+}
