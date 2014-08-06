@@ -18,7 +18,7 @@ function gsb_feature_pr_contact_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'pr_contact_title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -29,7 +29,7 @@ function gsb_feature_pr_contact_ds_field_settings_info() {
       ),
     ),
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -46,19 +46,6 @@ function gsb_feature_pr_contact_ds_field_settings_info() {
           'ow-def-at' => FALSE,
         ),
         'conditions' => array(),
-      ),
-    ),
-    'field_pr_contact_beats' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
       ),
     ),
     'field_pr_contact_email' => array(
@@ -149,23 +136,21 @@ function gsb_feature_pr_contact_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'pr_contact_title',
-        1 => 'title',
-        2 => 'field_pr_contact_title',
-        3 => 'description',
+        0 => 'group_wrapper_pr_contact',
+        1 => 'pr_contact_title',
+        2 => 'title',
+        3 => 'field_pr_contact_title',
         4 => 'field_pr_contact_phone',
         5 => 'field_pr_contact_email',
-        6 => 'field_pr_contact_beats',
       ),
     ),
     'fields' => array(
+      'group_wrapper_pr_contact' => 'ds_content',
       'pr_contact_title' => 'ds_content',
       'title' => 'ds_content',
       'field_pr_contact_title' => 'ds_content',
-      'description' => 'ds_content',
       'field_pr_contact_phone' => 'ds_content',
       'field_pr_contact_email' => 'ds_content',
-      'field_pr_contact_beats' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
