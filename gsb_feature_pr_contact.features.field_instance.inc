@@ -100,13 +100,15 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'email',
+        'module' => 'email_contact',
         'settings' => array(
           'conditions' => array(),
-          'text' => 'Email',
-          'title' => 'Email Contact Form',
+          'custom_path' => '',
+          'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+          'link_text' => 'Contact person by email',
+          'redirection_to' => 'referer',
         ),
-        'type' => 'email_contact',
+        'type' => 'email_contact_link',
         'weight' => 5,
       ),
     ),

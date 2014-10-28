@@ -6,6 +6,7 @@ project = gsb_feature_pr_contact
 dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = email
+dependencies[] = email_contact
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = taxonomy
