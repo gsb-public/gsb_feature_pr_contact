@@ -10,7 +10,7 @@
 function gsb_feature_pr_contact_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_beats'
+  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_beats'.
   $field_instances['taxonomy_term-pr_contact-field_pr_contact_beats'] = array(
     'bundle' => 'pr_contact',
     'custom_add_another' => '',
@@ -89,7 +89,7 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_email'
+  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_email'.
   $field_instances['taxonomy_term-pr_contact-field_pr_contact_email'] = array(
     'bundle' => 'pr_contact',
     'custom_add_another' => '',
@@ -137,7 +137,7 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_phone'
+  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_phone'.
   $field_instances['taxonomy_term-pr_contact-field_pr_contact_phone'] = array(
     'bundle' => 'pr_contact',
     'custom_add_another' => '',
@@ -180,7 +180,7 @@ function gsb_feature_pr_contact_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_title'
+  // Exported field_instance: 'taxonomy_term-pr_contact-field_pr_contact_title'.
   $field_instances['taxonomy_term-pr_contact-field_pr_contact_title'] = array(
     'bundle' => 'pr_contact',
     'custom_add_another' => '',

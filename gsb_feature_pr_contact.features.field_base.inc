@@ -10,21 +10,13 @@
 function gsb_feature_pr_contact_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_pr_contact_beats'
+  // Exported field_base: 'field_pr_contact_beats'.
   $field_bases['field_pr_contact_beats'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_pr_contact_beats',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -39,14 +31,13 @@ function gsb_feature_pr_contact_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_pr_contact_email'
+  // Exported field_base: 'field_pr_contact_email'.
   $field_bases['field_pr_contact_email'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_pr_contact_email',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'email',
@@ -55,14 +46,13 @@ function gsb_feature_pr_contact_field_default_field_bases() {
     'type' => 'email',
   );
 
-  // Exported field_base: 'field_pr_contact_phone'
+  // Exported field_base: 'field_pr_contact_phone'.
   $field_bases['field_pr_contact_phone'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_pr_contact_phone',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'telephone',
@@ -71,21 +61,13 @@ function gsb_feature_pr_contact_field_default_field_bases() {
     'type' => 'telephone',
   );
 
-  // Exported field_base: 'field_pr_contact_title'
+  // Exported field_base: 'field_pr_contact_title'.
   $field_bases['field_pr_contact_title'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_pr_contact_title',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
